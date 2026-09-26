@@ -4,192 +4,104 @@
 
 ### Recomendaciones musicales para descubrir nuevos sonidos
 
-Proyecto web académico enfocado en la presentación y exploración de **música alternativa**, desarrollado mediante HTML5, CSS3, JavaScript y Bootstrap.
+Proyecto web académico enfocado en la presentación y exploración de música mediante una interfaz visual, reproductor de audio y categorías musicales.
 
 <br>
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge\&logo=bootstrap\&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.8-7952B3?style=for-the-badge\&logo=bootstrap\&logoColor=white)
+
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
-
-<br>
-
-**🎓 Proyecto académico**
 
 </div>
 
 ---
 
-# 📖 Sobre el proyecto
+## 📖 Sobre el proyecto
 
-**Muslirics** es una página web orientada a la recomendación y exploración de música.
+**Muslirics** es un proyecto web desarrollado para presentar y recomendar música a través de una interfaz moderna y adaptable.
 
-La interfaz presenta una selección de canciones mediante tarjetas visuales, un reproductor de audio y diferentes categorías musicales.
+La página cuenta con una sección principal de bienvenida, navegación, tarjetas de recomendaciones musicales, un reproductor de audio y categorías por género.
 
-El proyecto fue desarrollado como ejercicio práctico para aplicar conocimientos de **maquetación web, diseño responsive, componentes de Bootstrap, CSS personalizado y JavaScript**.
-
----
-
-# 🎯 Objetivo
-
-Crear una interfaz web atractiva y adaptable que permita presentar recomendaciones musicales mediante diferentes elementos visuales e interactivos.
-
-El proyecto busca poner en práctica:
-
-* 🧱 Estructuración de páginas con HTML5
-* 🎨 Diseño personalizado con CSS3
-* 📱 Diseño responsive
-* 🧩 Componentes de Bootstrap
-* 🎧 Reproducción de audio mediante HTML5
-* ⚡ Manipulación de elementos mediante JavaScript
-* 🌿 Control de versiones con Git
-* 👥 Trabajo colaborativo con GitHub
+El proyecto fue desarrollado como práctica de **desarrollo frontend**, aplicando HTML5, CSS3, JavaScript y Bootstrap.
 
 ---
 
-# 🏠 Estructura de la página
+## 🎯 Objetivos
 
-La aplicación está organizada en diferentes secciones:
-
-```text
-┌─────────────────────────────────────┐
-│              NAVBAR                 │
-├─────────────────────────────────────┤
-│                                     │
-│              HERO                   │
-│      Recomendaciones musicales      │
-│       Formulario de correo          │
-│                                     │
-├─────────────────────────────────────┤
-│                                     │
-│             TOP TEN                 │
-│       🃏 🃏 🃏 🃏 🃏              │
-│                                     │
-├─────────────────────────────────────┤
-│                                     │
-│           PLAY MUSIC                │
-│         🎧 Reproductor              │
-│                                     │
-├─────────────────────────────────────┤
-│                                     │
-│            GÉNEROS                  │
-│      Rock · Pop · Metal · Jazz      │
-│                                     │
-├─────────────────────────────────────┤
-│              FOOTER                 │
-└─────────────────────────────────────┘
-```
+* Diseñar una interfaz web relacionada con la música.
+* Aplicar principios de **Responsive Web Design**.
+* Utilizar componentes y utilidades de **Bootstrap**.
+* Implementar un reproductor de audio mediante HTML5.
+* Practicar manipulación del DOM con JavaScript.
+* Aplicar estilos personalizados mediante CSS3.
+* Trabajar con control de versiones utilizando Git y GitHub.
 
 ---
 
-# 🎬 Hero / Landing Page
+## 🖥️ Características
 
-La primera sección funciona como portada principal del sitio.
-
-Cuenta con:
-
-* 🎵 Imagen de fondo relacionada con música
-* 🧭 Barra de navegación
-* 🎼 Título principal
-* 📝 Texto introductorio
-* 📧 Campo para correo electrónico
-* 🔴 Botón **Empezar**
-* 📱 Diseño adaptable
-
-La imagen de fondo utiliza una capa oscura mediante un pseudo-elemento CSS para mejorar la legibilidad del contenido.
-
-```css
-#herosection::before {
-  background: rgba(5, 5, 5, 0.5);
-}
-```
+| Característica     | Descripción                                         |
+| ------------------ | --------------------------------------------------- |
+| 🏠 Landing Page    | Sección principal con presentación del proyecto     |
+| 🧭 Navbar          | Navegación responsive mediante Bootstrap            |
+| 🎵 Recomendaciones | Tarjetas con información de canciones               |
+| 🎧 Reproductor     | Reproducción de archivos de audio `.mp3`            |
+| 🎸 Géneros         | Categorías musicales mediante etiquetas             |
+| 📱 Responsive      | Adaptación a diferentes tamaños de pantalla         |
+| 📧 Formulario      | Campo de correo electrónico en la sección principal |
+| 🎨 Diseño          | Interfaz oscura con estilos personalizados          |
 
 ---
 
-# 🧭 Navegación
+## 🎵 Sección de recomendaciones
 
-La barra de navegación utiliza el componente **Navbar de Bootstrap 5**.
+La sección **Top Ten** presenta actualmente una selección de **cinco recomendaciones musicales** mediante tarjetas.
 
-Incluye:
+Cada tarjeta contiene información como:
 
-* 🏠 Inicio
-* 🔥 Top Ten
-* 🎧 Play Music
-* 🎸 Géneros
-* 🔐 Iniciar sesión
-* 📝 Registrarse
+* Portada
+* Categoría
+* Nombre de la canción
+* Artista
+* Fecha
+* Descripción
+* Ruta asociada al archivo de audio
 
-Además, incorpora el botón responsive de Bootstrap para adaptar la navegación a dispositivos móviles.
-
----
-
-# 🔥 Top Ten
-
-La sección **Top Ten** presenta una selección de cinco recomendaciones musicales mediante tarjetas.
-
-Cada card contiene:
-
-* 💿 Portada
-* 🎵 Nombre
-* 📝 Descripción
-* 🎼 Título de la canción
-* 🎤 Autor
-* 📅 Fecha
-
-Las tarjetas utilizan el sistema **Grid de Bootstrap**, permitiendo que la distribución cambie dependiendo del tamaño de pantalla.
-
-### Ejemplo de distribución
-
-```text
-Desktop
-🃏 🃏 🃏 🃏 🃏
-
-Tablet
-🃏 🃏 🃏
-🃏 🃏
-
-Mobile
-🃏
-🃏
-🃏
-🃏
-🃏
-```
-
----
-
-# 🎧 Reproductor de música
-
-El proyecto incorpora un reproductor utilizando el elemento nativo:
+Ejemplo de la estructura utilizada:
 
 ```html
-<audio controls>
+<div class="card" data-url="assets/archivo.mp3">
+    ...
+</div>
 ```
 
-Esto permite reproducir archivos `.mp3` directamente desde el navegador.
-
-Además, las tarjetas contienen un atributo personalizado:
-
-```html
-data-url="assets/mixkit-a-special-feeling-1087.mp3"
-```
-
-Esto permite asociar cada tarjeta con una pista de audio.
-
-### 💡 Funcionalidad preparada
-
-El proyecto contiene código JavaScript preparado para detectar el clic sobre una tarjeta, obtener su `data-url` y asignarlo al reproductor.
-
-Actualmente esta lógica se encuentra **comentada en el código**, por lo que se considera una funcionalidad preparada para una futura integración.
+El atributo `data-url` permite asociar cada tarjeta con una pista de audio.
 
 ---
 
-# 🎸 Géneros musicales
+## 🎧 Reproductor de audio
 
-La sección de géneros presenta diferentes categorías mediante etiquetas visuales:
+El proyecto utiliza el reproductor nativo de HTML5:
+
+```html
+<audio id="reproductor" controls class="w-100">
+    <source src="assets/archivo.mp3" type="audio/mpeg">
+</audio>
+```
+
+También se incluye en JavaScript la lógica necesaria para asociar una tarjeta con su archivo de audio.
+
+> **Nota:** La lógica de reproducción mediante clic sobre las tarjetas se encuentra actualmente preparada en `app.js`, pero está comentada en la versión actual del proyecto.
+
+---
+
+## 🎸 Géneros musicales
+
+Actualmente se muestran las siguientes categorías:
 
 * Rock
 * Pop
@@ -198,70 +110,65 @@ La sección de géneros presenta diferentes categorías mediante etiquetas visua
 * Indie
 * Electrónica
 
-Cada género utiliza una clase CSS personalizada:
+Estas categorías se presentan mediante elementos visuales personalizados:
 
 ```html
 <span class="genre-tag">Rock</span>
+<span class="genre-tag">Pop</span>
+<span class="genre-tag">Metal</span>
 ```
-
-Las etiquetas utilizan bordes redondeados y un fondo semitransparente para mantener la estética oscura del proyecto.
 
 ---
 
-# 📱 Diseño Responsive
+## 📱 Diseño Responsive
 
-El proyecto combina **Bootstrap Grid** con **CSS Media Queries** para adaptar la interfaz a diferentes dispositivos.
+La interfaz combina **Bootstrap** y **CSS Media Queries** para adaptarse a diferentes dispositivos.
 
-Se contemplan diferentes tamaños de pantalla:
+Se contemplan principalmente:
 
 ```text
-🖥️ Desktop
-        ↓
-💻 Laptop
-        ↓
-📱 Tablet
-        ↓
-📱 Mobile
+Desktop
+   ↓
+Laptop
+   ↓
+Tablet
+   ↓
+Mobile
 ```
 
-Entre los ajustes responsive se encuentran:
+Entre los elementos adaptables se encuentran:
 
-* Reducción del tamaño del logo.
-* Reorganización de los botones.
-* Cambio de orientación del formulario.
-* Reducción de imágenes de las cards.
-* Cards a ancho completo en dispositivos pequeños.
-* Navbar adaptable.
-
----
-
-# 🛠️ Tecnologías utilizadas
-
-## Frontend
-
-<p align="left">
-
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
-<img src="https://img.shields.io/badge/Bootstrap-5.3.8-7952B3?style=flat-square&logo=bootstrap&logoColor=white">
-
-</p>
-
-## Herramientas
-
-<p align="left">
-
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white">
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white">
-
-</p>
+* Navbar
+* Logo
+* Formulario
+* Botones
+* Tarjetas musicales
+* Imágenes
+* Distribución del contenido
 
 ---
 
-# 📂 Estructura del proyecto
+## 🛠️ Tecnologías
 
-La organización utilizada actualmente es:
+### Frontend
+
+| Tecnología          | Uso                                |
+| ------------------- | ---------------------------------- |
+| **HTML5**           | Estructura y contenido             |
+| **CSS3**            | Diseño y estilos personalizados    |
+| **JavaScript**      | Interacción y manipulación del DOM |
+| **Bootstrap 5.3.8** | Componentes y diseño responsive    |
+
+### Herramientas
+
+| Herramienta | Uso                                   |
+| ----------- | ------------------------------------- |
+| **Git**     | Control de versiones                  |
+| **GitHub**  | Gestión y alojamiento del repositorio |
+
+---
+
+## 📂 Estructura del proyecto
 
 ```text
 Muslirics/
@@ -290,53 +197,28 @@ Muslirics/
 
 ---
 
-# 💻 Bootstrap
+## 🎨 Diseño
 
-El proyecto utiliza **Bootstrap 5.3.8 mediante CDN**.
+El proyecto utiliza una estética predominantemente oscura, complementada con elementos visuales relacionados con la música.
 
-Entre los componentes y utilidades utilizados se encuentran:
+### Elementos principales
 
-| Componente          | Uso                        |
-| ------------------- | -------------------------- |
-| `Navbar`            | Navegación principal       |
-| `Container`         | Organización del contenido |
-| `Grid`              | Distribución responsive    |
-| `Cards`             | Presentación de canciones  |
-| `Buttons`           | Acciones e interacción     |
-| `Forms`             | Formularios                |
-| `Collapse`          | Menú responsive            |
-| `Flex utilities`    | Organización de elementos  |
-| `Spacing utilities` | Márgenes y espaciados      |
-
----
-
-# 🎨 Diseño visual
-
-El proyecto utiliza una estética principalmente oscura:
-
-```text
-🌑 Fondo oscuro
-🎵 Elementos musicales
-⚪ Texto claro
-🔴 Botones de acción
-🟢 Acciones secundarias
-```
-
-El CSS incorpora además:
-
-* Fondos semitransparentes.
-* Bordes redondeados.
+* Fondo oscuro.
+* Imágenes de portada.
+* Botones de acción.
+* Tarjetas con bordes redondeados.
 * Sombras.
-* Efecto `backdrop-filter`.
-* Tipografía adaptable mediante `clamp()`.
-* Media queries.
-* Diseño flexible mediante Flexbox.
+* Transparencias.
+* Efectos de desenfoque.
+* Diseño responsive.
+
+El proyecto utiliza una imagen de fondo en la sección principal y diferentes recursos gráficos almacenados en `assets/`.
 
 ---
 
-# 🚀 Ejecución
+## 💻 Ejecución
 
-Este es un proyecto frontend y no requiere servidor backend para ejecutarse.
+Este proyecto es una aplicación **frontend estática**, por lo que no requiere un servidor backend.
 
 ### 1. Clonar el repositorio
 
@@ -344,7 +226,7 @@ Este es un proyecto frontend y no requiere servidor backend para ejecutarse.
 git clone https://github.com/USUARIO/REPOSITORIO.git
 ```
 
-### 2. Entrar al proyecto
+### 2. Acceder al proyecto
 
 ```bash
 cd REPOSITORIO
@@ -352,80 +234,57 @@ cd REPOSITORIO
 
 ### 3. Ejecutar
 
-Abrir:
+Abrir el archivo:
 
 ```text
 index.html
 ```
 
-También puede utilizarse **Visual Studio Code + Live Server** para ejecutar el proyecto durante el desarrollo.
+También puede utilizarse **Live Server** desde Visual Studio Code para facilitar el desarrollo.
 
 ---
 
-# 📚 Aprendizajes
+## 📚 Aprendizajes
 
-Durante el desarrollo se reforzaron conocimientos sobre:
+Durante el desarrollo del proyecto se reforzaron conocimientos en:
 
-### HTML5
-
-* Estructura semántica.
-* Formularios.
-* Audio HTML5.
-* Atributos personalizados `data-*`.
-* Accesibilidad básica mediante atributos `alt` y `aria-*`.
-
-### CSS3
-
+* Estructuración de páginas con HTML5.
+* Formularios HTML.
+* Reproducción de audio con HTML5.
+* Diseño responsive.
 * Flexbox.
-* Responsive Design.
 * Media Queries.
-* Pseudo-elementos.
-* `clamp()`.
-* Transparencias.
-* Sombras.
-* Diseño adaptable.
-
-### Bootstrap
-
-* Navbar.
-* Grid System.
-* Cards.
-* Forms.
-* Buttons.
-* Containers.
-* Collapse.
-* Utilidades responsive.
-
-### JavaScript
-
-* Selección de elementos DOM.
-* `querySelectorAll()`.
+* Componentes de Bootstrap.
+* Manipulación del DOM.
 * Eventos `click`.
-* Uso de `dataset`.
-* Manipulación del elemento `<audio>`.
+* Uso de atributos `data-*`.
+* Organización de archivos frontend.
+* Control de versiones con Git y GitHub.
 
 ---
 
-# 🔮 Próximas mejoras
+## 🔮 Próximas mejoras
 
-Algunas funcionalidades pueden continuar desarrollándose a partir de la estructura actual:
+La estructura actual permite continuar incorporando funcionalidades como:
 
-* [ ] Activar la reproducción al seleccionar una card.
+* [ ] Activar la reproducción de música al seleccionar una tarjeta.
 * [ ] Implementar búsqueda de canciones.
 * [ ] Implementar filtros por género.
-* [ ] Convertir los géneros en elementos interactivos.
-* [ ] Incorporar más canciones al Top Ten.
+* [ ] Ampliar la cantidad de recomendaciones.
+* [ ] Agregar validación al formulario.
 * [ ] Mejorar la navegación entre secciones.
-* [ ] Añadir validaciones al formulario.
-* [ ] Integrar una fuente de datos para las recomendaciones.
+* [ ] Incorporar una fuente de datos para las recomendaciones.
+* [ ] Implementar una interfaz más dinámica mediante JavaScript.
 
 ---
 
-# 🎓 Tipo de proyecto
+## 🎓 Tipo de proyecto
 
 **Proyecto académico de desarrollo frontend.**
 
-Desarrollado con fines educativos para poner en práctica conocimientos de **HTML5, CSS3, JavaScript, Bootstrap, Git y GitHub**.
+Desarrollado con fines educativos para aplicar conocimientos de:
+
+`HTML5` · `CSS3` · `JavaScript` · `Bootstrap` · `Git` · `GitHub`
 
 ---
 
@@ -437,6 +296,6 @@ Desarrollado con fines educativos para poner en práctica conocimientos de **HTM
 
 <br>
 
-🎧 *Proyecto desarrollado con fines educativos.*
+*Proyecto desarrollado con fines educativos.*
 
 </div>
